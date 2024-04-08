@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+/* Global CSS */
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: #3f6a70;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+.navber .logo {
+    color: #ffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#search-input {
+    max-width: 400px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    background-color: #138065;
+    color: #ffff;
+    cursor: pointer;
+}
+
+/* Main */
+#blog-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    width: 280px;
+    border: 1px solid #3f6a50;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+}
+
+.blog-card:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.blog-card img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.blog-card p {
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+/* media quiry */
+@media (max-width:500px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    #search-button {
+        padding: 10px 10px;
+    }
+
+    .navber .logo {
+        font-size: 1.7rem;
+    }
+
+    #search-input {
+        width: 150px;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+}
